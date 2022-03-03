@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TcSmItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.beckhoff.com/schemas/2012/07/TcSmItem" TcSmVersion="1.0" TcVersion="3.1.4022.30" ClassName="CNcSafTaskDef" SubType="0">
+	<NC>
+		<SafTask Priority="4" CycleTime="20000" AmsPort="501" IoAtBegin="true">
+			<Name>NC-Task 1 SAF</Name>
+			<Vars VarGrpType="1" InsertType="1">
+				<Name>Inputs</Name>
+			</Vars>
+			<Vars VarGrpType="2" InsertType="1">
+				<Name>Outputs</Name>
+			</Vars>
+			<Image Id="1" AddrType="1" ImageType="1">
+				<Name>Image</Name>
+			</Image>
+		</SafTask>
+		<SvbTask Priority="8" CycleTime="100000" AmsPort="511">
+			<Name>NC-Task 1 SVB</Name>
+		</SvbTask>
+		<Axis File="Axis 1 AL1K4-L2SI-MMS.xti" Id="1"/>
+		<Axis File="Axis 2.xti" Id="2"/>
+		<Axis File="Axis 3.xti" Id="3"/>
+		<Axis File="Axis 4.xti" Id="4"/>
+		<Axis File="Axis 5.xti" Id="5"/>
+		<Axis File="Axis 6 IM1K4-XTES-MMS.xti" Id="6"/>
+		<Axis File="Axis 7 IM1K4-XTES-CLZ.xti" Id="7"/>
+		<Axis File="Axis 8 IM1K4-XTES-CLF.xti" Id="8"/>
+		<Axis File="Axis 9 IM2K4-PPM-MMS.xti" Id="9"/>
+		<Axis File="Axis 15 IM3K4-PPM-MMS.xti" Id="15"/>
+		<Axis File="Axis 16 IM4K4-PPM-MMS.xti" Id="16"/>
+		<Axis File="Axis 17 IM5K4-PPM-MMS.xti" Id="17"/>
+		<Axis File="Axis 18 PF1K4-WFS_TARGET-MMS-Y.xti" Id="18"/>
+		<Axis File="Axis 19 PF1K4-WFS_TARGET-MMS-Z.xti" Id="19"/>
+		<Axis File="Axis 20 LI1K4-IP1-MMS.xti" Id="20"/>
+		<Axis File="Axis 21 TM1K4-MMS-Y.xti" Id="21"/>
+		<Axis File="Axis 22 TM1K4-MMS-X.xti" Id="22"/>
+		<Axis File="SL1K4-BOTTOM-M10.xti" Id="10"/>
+		<Axis File="SL1K4-NORTH-M12.xti" Id="12"/>
+		<Axis File="SL1K4-TOP-M11.xti" Id="11"/>
+		<Axis File="SL2K4-BOTTOM-M23.xti" Id="23"/>
+		<Axis File="SL2K4-NORTH-M25.xti" Id="25"/>
+		<Axis File="SL2K4-SOUTH-M26.xti" Id="26"/>
+		<Axis File="SL2K4-TOP-M24.xti" Id="24"/>
+		<Axis File="ST1K4-TEST.xti" Id="14"/>
+	</NC>
+</TcSmItem>
