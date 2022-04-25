@@ -53,7 +53,7 @@
     <Compile Include="POUs\PRG_IM5K4_PPM.TcPOU">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="POUs\PRG_IM6K4.TcPOU">
+    <Compile Include="POUs\PRG_IM6K4_PPM.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_LI1K4_IP1.TcPOU">
@@ -83,6 +83,15 @@
     <Compile Include="POUs\PRG_TM2K4.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\temp\FB_SLITS.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\temp\FB_SLITS_POWER.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\temp\FB_SLITS_SCATTER.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\TM1K4\ENUM_TM1K4_States.TcDUT">
       <SubType>Code</SubType>
     </Compile>
@@ -96,6 +105,7 @@
   <ItemGroup>
     <Folder Include="DUTs" />
     <Folder Include="GVLs" />
+    <Folder Include="POUs\temp" />
     <Folder Include="POUs\TM1K4" />
     <Folder Include="VISUs" />
     <Folder Include="POUs" />
