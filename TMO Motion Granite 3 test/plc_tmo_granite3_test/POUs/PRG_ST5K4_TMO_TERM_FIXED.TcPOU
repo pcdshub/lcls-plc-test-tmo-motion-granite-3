@@ -8,12 +8,12 @@ VAR
                                  .i_xRetractedLS:=	TIIB[ST5K4-EP2338]^Channel 3^Input;
                                  .q_xInsert_DO	:=	TIIB[ST5K4-EP2338]^Channel 9^Output
     '}
-    ST4K4: FB_MotionPneumaticActuator;
+    ST5K4: FB_MotionPneumaticActuator;
     ibPMPS_OK : BOOL;
 END_VAR
 ]]></Declaration>
     <Implementation>
-      <ST><![CDATA[ST4K4(
+      <ST><![CDATA[ST5K4(
     ibInsertOK:= TRUE,
     ibRetractOK:= TRUE,
     ibPMPS_OK:= ibPMPS_OK,

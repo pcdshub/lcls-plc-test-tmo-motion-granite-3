@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5e004a70-0ed1-4ca1-b4d6-0f12f622b4ca}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
-    <Name>Untitled1</Name>
+    <Name>plc_tmo_granite3_test</Name>
     <ProgramVersion>3.1.4022.7</ProgramVersion>
     <Application>{aa604966-ce37-462b-bd94-4572fa3fbc0b}</Application>
     <TypeSystem>{ae766a12-9e41-4760-a83b-9069d54581af}</TypeSystem>
@@ -53,10 +53,16 @@
     <Compile Include="POUs\PRG_IM5K4_PPM.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\PRG_IM6K4.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="POUs\PRG_LI1K4_IP1.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_PF1K4_WFS_TARGET.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\PRG_PF2K4_WFS_TARGET.TcPOU">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="POUs\PRG_SL1K4_SCATTER.TcPOU">
@@ -74,10 +80,23 @@
     <Compile Include="POUs\PRG_TM1K4.TcPOU">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="POUs\PRG_TM2K4.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\TM1K4\ENUM_TM1K4_States.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\TM1K4\FB_TM1K4.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="POUs\TM1K4\FB_TM1K4_States.TcPOU">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DUTs" />
     <Folder Include="GVLs" />
+    <Folder Include="POUs\TM1K4" />
     <Folder Include="VISUs" />
     <Folder Include="POUs" />
   </ItemGroup>
@@ -125,11 +144,16 @@
       <Resolution>PMPS, * (SLAC - LCLS)</Resolution>
     </PlaceholderResolution>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="plc_tmo_granite3_test.tmc">
+      <SubType>Content</SubType>
+    </None>
+  </ItemGroup>
   <ProjectExtensions>
     <PlcProjectOptions>
       <XmlArchive>
-  <Data>
-    <o xml:space="preserve" t="OptionKey">
+        <Data>
+          <o xml:space="preserve" t="OptionKey">
       <v n="Name">"&lt;ProjectRoot&gt;"</v>
       <d n="SubKeys" t="Hashtable" ckt="String" cvt="OptionKey">
         <v>{192FAD59-8248-4824-A8DE-9177C94C195A}</v>
@@ -156,13 +180,13 @@
       </d>
       <d n="Values" t="Hashtable" />
     </o>
-  </Data>
-  <TypeList>
-    <Type n="Hashtable">System.Collections.Hashtable</Type>
-    <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
-    <Type n="String">System.String</Type>
-  </TypeList>
-</XmlArchive>
+        </Data>
+        <TypeList>
+          <Type n="Hashtable">System.Collections.Hashtable</Type>
+          <Type n="OptionKey">{54dd0eac-a6d8-46f2-8c27-2f43c7e49861}</Type>
+          <Type n="String">System.String</Type>
+        </TypeList>
+      </XmlArchive>
     </PlcProjectOptions>
   </ProjectExtensions>
 </Project>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4022.18">
+  <POU Name="PRG_TM2K4" Id="{99190475-50e3-4305-af97-bed5cd42a78e}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM PRG_TM2K4
+VAR
+	{attribute 'pytmc' := '
+        pv: TM2K4:ATM
+        io: io
+    '}
+    {attribute 'TcLinkTo' := '.fbThermoCouple1.bError := TIIB[TM2K4-EL3314-E5]^TC Inputs Channel 1^Status^Error;
+                              .fbThermoCouple1.bUnderrange := TIIB[TM2K4-EL3314-E5]^TC Inputs Channel 1^Status^Underrange;
+                              .fbThermoCouple1.bOverrange := TIIB[TM2K4-EL3314-E5]^TC Inputs Channel 1^Status^Overrange;
+                              .fbThermoCouple1.iRaw := TIIB[TM2K4-EL3314-E5]^TC Inputs Channel 1^Value'}
+    fbTM2K4: FB_ATM;
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[fbTM2K4.nTransitionAssertionID := 16#5140;
+fbTM2K4.nUnknownAssertionID := 16#5149;
+
+fbTM2K4.stOut.fPosition := -15;
+fbTM2K4.stOut.bUseRawCounts := FALSE;
+fbTM2K4.stOut.nRequestAssertionID := 16#5141;
+fbTM2K4.stOut.stBeamParams := PMPS_GVL.cstFullBeam;
+fbTM2K4.stOut.bValid := TRUE;
+
+fbTM2K4.stTarget1.fPosition := -39.124;
+fbTM2K4.stTarget1.bUseRawCounts := FALSE;
+fbTM2K4.stTarget1.nRequestAssertionID := 16#5142;
+fbTM2K4.stTarget1.stBeamParams := PMPS_GVL.cstFullBeam;
+fbTM2K4.stTarget1.bValid := TRUE;
+
+fbTM2K4.stTarget2.fPosition := -53.5;
+fbTM2K4.stTarget2.bUseRawCounts := FALSE;
+fbTM2K4.stTarget2.nRequestAssertionID := 16#5143;
+fbTM2K4.stTarget2.stBeamParams := PMPS_GVL.cstFullBeam;
+fbTM2K4.stTarget2.bValid := TRUE;
+
+fbTM2K4.stTarget3.fPosition := -67.874;
+fbTM2K4.stTarget3.bUseRawCounts := FALSE;
+fbTM2K4.stTarget3.nRequestAssertionID := 16#5144;
+fbTM2K4.stTarget3.stBeamParams := PMPS_GVL.cstFullBeam;
+fbTM2K4.stTarget3.bValid := TRUE;
+
+fbTM2K4.stTarget4.fPosition := -82.25;
+fbTM2K4.stTarget4.bUseRawCounts := FALSE;
+fbTM2K4.stTarget4.nRequestAssertionID := 16#5145;
+fbTM2K4.stTarget4.stBeamParams := PMPS_GVL.cstFullBeam;
+fbTM2K4.stTarget4.bValid := TRUE;
+
+fbTM2K4.stTarget5.fPosition := -96.623;
+fbTM2K4.stTarget5.bUseRawCounts := FALSE;
+fbTM2K4.stTarget5.nRequestAssertionID := 16#5146;
+fbTM2K4.stTarget5.stBeamParams := PMPS_GVL.cstFullBeam;
+fbTM2K4.stTarget5.bValid := TRUE;
+
+fbTM2K4(
+    fbArbiter := fbArbiter,
+    fbFFHWO := fbFastFaultOutput1,
+    stYStage := Main.M30,
+    stXStage := Main.M31);]]></ST>
+    </Implementation>
+  </POU>
+</TcPlcObject>
