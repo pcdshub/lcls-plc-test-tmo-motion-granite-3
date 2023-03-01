@@ -1,0 +1,48 @@
+
+Boxes
+-----
+
+
+PLC_EK1200
+^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, PLC_EK1200
+    ID, 1
+
+
+.. raw:: html
+
+   </details>
+
+
+Coupler_EK1110
+^^^^^^^^^^^^^^
+
+
+.. raw:: html
+
+   <details>
+        <summary>EtherCAT</summary>
+
+.. csv-table:: Basic Settings
+    :header: Name, Data
+    :align: center
+
+    Name, Coupler_EK1110
+    ID, 2
+
+
+.. raw:: html
+
+   </details>
+

@@ -1,0 +1,29 @@
+lcls-plc-test-tmo-motion-granite-3
+----------------------------------
+
+.. toctree::
+    :maxdepth: 2
+    :caption: TMO Motion Granite 3 test
+
+    TMO Motion Granite 3 test_pragmas
+    TMO Motion Granite 3 test_nc
+    TMO Motion Granite 3 test_boxes
+    TMO Motion Granite 3 test_links
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: plc_tmo_granite3_test
+
+    TMO Motion Granite 3 test_plc_tmo_granite3_test_summary
+    TMO Motion Granite 3 test_plc_tmo_granite3_test_epics
+    TMO Motion Granite 3 test_plc_tmo_granite3_test_source
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
